@@ -6,7 +6,8 @@ and then we let them exert forces upon one another in accordance with the
 provided distance function, such that their actual distances on the sphere will
 correspond better and better with the target distance given by your function.
 
-Please see http://erikkemperman.github.io/spheresort/ for a demo.
+Please see http://erikkemperman.github.io/spheresort/ for a demo (built with
+AngularJS, Bootstrap, ThreeJS and D3).
 
 In this little demo, the dataset consists of randomly generated colors, and the
 distance function simply returns a value proportional to the Euclidean distance
