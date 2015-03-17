@@ -16,8 +16,6 @@ angular.module( 'spheresortApp' )
     rate: 0.1,
   } );
   
-  console.log( 'democtrl', $scope );
-  
   $scope.length = 160;
   $scope.data = new Array( $scope.length );
   $scope.materials = new Array( $scope.length );

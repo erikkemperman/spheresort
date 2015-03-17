@@ -94,7 +94,6 @@
       }
       avg /= thiz.distances.length;
       if ( thiz.options.equalize ) {
-        console.log( "pre equalize min, avg, max:", min, avg, max );
         var sorted = Array( thiz.distances.length );
         for ( j = sorted.length; j-- > 0; ) {
           sorted[ j ] = j;
@@ -112,7 +111,6 @@
           cum += inc;
         }
         avg /= sorted.length;
-        console.log( "post equalize min, avg, max:", thiz.distances[ sorted[ 0 ] ], avg, thiz.distances[ sorted[sorted.length-1 ] ] );
       }
       
       // initially all positions are randomly distributed over the sphere surface
