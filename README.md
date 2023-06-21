@@ -31,3 +31,6 @@ with uniform probability.
 The main source file resides in bower_components/spheresort. Eventually, I ought
 to split the demo and the core script in two separate branches, where the latter
 is a bower dependency of the former.
+
+I've published this a bit prematurely, I suppose, and really should add some
+explanation and documentation ASAP.
