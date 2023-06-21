@@ -13,7 +13,7 @@ angular.module( 'spheresortApp' )
     restrict: 'A',
 
     link: function postLink( $scope, element, attrs ) {
-      console.log( 'threecontainer', $scope, attrs, $window );
+      
       // Set up scene, camera and renderer
       var ratio = attrs.ratio || 4/3
       , shape = attrs.shape || 'sphere'
@@ -29,8 +29,6 @@ angular.module( 'spheresortApp' )
           : new $window.THREE.SphereGeometry( 0.1, 32, 32 ),
         objects: new $window.THREE.Group()
       };
-      
-      console.log( $scope.three.objects.position, $scope.three.camera, $scope.three.renderer );
       
       $scope.three.camera.position.set( 0, 0, 5 );
       $scope.three.objects.position.set( 0, 0, 2 );
@@ -54,8 +52,6 @@ angular.module( 'spheresortApp' )
         mesh.position.set.apply( mesh.position, $scope.spheresort.positions[ i ] );
         $scope.three.objects.add( mesh );
       }
-      
-      console.log( $scope.spheresort, $scope.three.objects );
       
       var count = -1; // TODO remove
       var render = function () {
